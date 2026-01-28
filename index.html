@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alhiva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #d16ba5, #f8cdda);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    .contenedor {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .producto {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+
+
+
+
+    .producto h3 {
+      margin: 15px;
+      color: #b1457b;
+    }
+
+    .info {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 15px;
+    }
+
+    .info p {
+      margin: 10px 0;
+      font-size: 0.95em;
+    }
+
+    .precio {
+      font-weight: bold;
+      color: #d16ba5;
+    }
+
+    .producto.activo .info {
+      max-height: 200px;
+      padding-bottom: 15px;
+    }
+
+    footer {
+      background-color: #f3d6e3;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+    .whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 120px;        /* tamaño del logo */
+  height: 120px;       /* mismo valor para que sea circular */
+  border-radius: 50%;  /* hace el círculo */
+  object-fit: cover;   /* ajusta la imagen dentro del círculo */
+  margin-bottom: 15px;
+}
+
+
+.nombre-producto {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff2893;
+  text-align: center;
+  margin: 12px 10px 8px;
+  letter-spacing: 0.5px;
+}
+
+.producto {
+  text-align: center;
+}
+
+.info p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #000000;
+}
+
+  </style>
+</head>
+
+<a href="https://wa.me/50683470018?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20productos"
+   class="whatsapp-btn"
+   target="_blank">
+  WhatsApp
+</a>
+
+<body>
+
+  <header>
+  <img src="img/logo.jpg" alt="Logo Macrobiótica" class="logo">
+  <h1>Bienestar y salud femenina </h1>
+  <p>Bienestar natural para tu cuerpo </p>
+</header>
+
+
+  <section class="contenedor">
+
+    <!-- Producto 1 -->
+    <div class="producto">
+      <img src="c:\Users\dell\Desktop\index alhiva\img\flo.png.jpg" alt="Té hormonal">
+      <h3>Flo</h3>
+      <div class="info">
+        <p>FLO Apoyo a la salud ovárica - Equilibrio hormonal para mujeres, suplemento con DIM, Myo y D-Chiro inositol, ácido fólico - Apoya la ovulación saludable, regularidad del ciclo - 30 porciones.</p>
+        <p class="precio">₡20,000</p>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto">
+      <img src="c:\Users\dell\Desktop\index alhiva\img\meno.jpg.jpg" alt="Colágeno">
+      <h3>Meno</h3>
+      <div class="info">
+        <p>MENO Vitaminas para la menopausia – Suplemento de menopausia sin hormonas para mujeres – Cohosh negro y Ashwagandha KSM-66 – Ayuda a aliviar los sofocos, sudores nocturnos, cambios de humor.</p>
+        <p class="precio">₡22,500</p>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto">
+      <img src="img/moto.jpg.jpg" alt="Aceite esencial">
+      <h3>Moto</h3>
+      <div class="info">
+        <p>Cápsulas de metabolismo URO + soporte probiótico – Metabolismo, salud intestinal y energía sostenida – con picolinato de cromo, extracto de grano de café verde y probióticos específicos .</p>
+        <p class="precio">₡15,000</p>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto">
+      <img src="img/preggo.jpg.jpg" alt="Vitaminas">
+      <h3>Preggo</h3>
+      <div class="info">
+        <p>Cápsulas de salud espermática para hombres, formuladas por ginecólogos para mejorar el recuento de espermatozoides y la motilidad con Tongkat Ali, NAC, ácido alfa lipoico, salud</p>
+        <p class="precio">₡23,500</p>
+      </div>
+    </div>
+
+    <!-- Producto 5 -->
+    <div class="producto">
+      <img src="img/uro.jpg.jpg" alt="Proteína vegetal">
+      <h3>Uro</h3>
+      <div class="info">
+        <p>Crema desodorante íntima para todo el cuerpo, probada por dermatólogos, hipoalergénica, no irritante, sin aluminio, sin perfume, se seca transparente, control de olores y humedad.</p>
+        <p class="precio">₡9,500</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Macrobiótica Femenina · Salud y bienestar natural
+  </footer>
+
+  <script>
+    const productos = document.querySelectorAll('.producto');
+
+    productos.forEach(producto => {
+      producto.addEventListener('click', () => {
+        producto.classList.toggle('activo');
+      });
+    });
+  </script>
+
+</body>
+</html>
